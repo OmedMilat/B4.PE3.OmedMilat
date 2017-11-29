@@ -1,0 +1,2 @@
+android.app.Application
+B4.PE3.OmedM.Android
