@@ -1,4 +1,5 @@
-﻿using B4.PE3.OmedM.ViewModels;
+﻿using B4.PE3.OmedM.Domain.Models;
+using B4.PE3.OmedM.ViewModels;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;

@@ -5,6 +5,7 @@ using B4.PE3.OmedM.Domain.Models;
 using System.Runtime.CompilerServices;
 using System.Collections.ObjectModel;
 using B4.PE3.OmedM.Domain.Services;
+using Acr.UserDialogs;
 
 namespace B4.PE3.OmedM.ViewModels
 {
@@ -34,11 +35,29 @@ namespace B4.PE3.OmedM.ViewModels
             }
         }
 
+        public string Name { get; set; }
         public ICommand GetLocation => new Command(
              async () =>
              {
-                 await locationService.AddNewLocation();
+                 try
+                 {
+                     await locationService.AddNewLocation(Name);
+                 }
+                 catch
+                 {
+                     await UserDialogs.Instance.AlertAsync("Fout", "Gelieve uw gps aan te zetten.", "Ok");
+                 }
                  Locations = new ObservableCollection<Location>(locationService.GetAll().Result);
              });
+
+        //INavigation navigation;
+        //public MainViewModel(Location location,INavigation navigation)
+        //{
+        //    this.navigation = navigation;
+
+        //    locationService = new LocationInMemoryService();
+        //    Locations = new ObservableCollection<Location>(locationService.GetAll().Result);
+        //}
+
     }
 }

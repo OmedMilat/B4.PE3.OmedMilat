@@ -6,16 +6,33 @@
     <ContentPage.Content>
         <StackLayout>
             <Button Command="{Binding GetLocation}"></Button>
-            <ListView ItemsSource="{Binding Locations}">
+            <StackLayout>
+                <Entry Text="{Binding Name}" ></Entry>
+            </StackLayout>
+            <ListView ItemsSource="{Binding Locations}" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout HeightRequest="50">
-                                <Label Text="{Binding Latitude}" Margin="10,0,0,0"
-                                       VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand"/>
-                                <Label Text="{Binding Longitude}" Margin="10,0,0,0"
-                                       VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand"/>
-                            </StackLayout>
+                            <Grid Margin="10,0,10,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Name:"></Label>
+                                <Label Text="{Binding Name}" Grid.Row="1"/>
+                                <Label Text="Date:"  Grid.Column="1"></Label>
+                                <Label Text="{Binding GpsTime, StringFormat='{}{0:HH:mm}'}" Grid.Row="1" Grid.Column="1"/>
+                                <Label Text="Latitude:" Grid.Row="2"></Label>
+                                <Label Text="{Binding Latitude}" Grid.Row="3" />
+                                <Label Text="Longitude:" Grid.Row="2" Grid.Column="1"></Label>
+                                <Label Text="{Binding Longitude}" Grid.Row="3" Grid.Column="1"/>
+                            </Grid>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

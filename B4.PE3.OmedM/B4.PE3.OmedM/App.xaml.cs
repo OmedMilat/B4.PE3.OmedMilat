@@ -1,4 +1,5 @@
-﻿using B4.PE3.OmedM.Views;
+﻿using Acr.UserDialogs;
+using B4.PE3.OmedM.Views;
 
 using Xamarin.Forms;
 
@@ -9,7 +10,6 @@ namespace B4.PE3.OmedM
         public App()
         {
             InitializeComponent();
-
             MainPage = new NavigationPage(new MainView());
         }
 

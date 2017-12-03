@@ -20,3 +20,8 @@ C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\obj\Debug\B4.PE3.OmedM.dll
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\obj\Debug\B4.PE3.OmedM.pdb
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\obj\Debug\B4.PE3.OmedM.csprojResolveAssemblyReference.cache
+C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\bin\Debug\Acr.UserDialogs.dll
+C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\bin\Debug\Acr.UserDialogs.Interface.dll
+C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\bin\Debug\Splat.dll
+C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\bin\Debug\Acr.UserDialogs.Interface.pdb
+C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\obj\Debug\B4.PE3.OmedM.Views.StartPage.xaml.g.cs
