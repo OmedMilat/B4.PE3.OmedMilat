@@ -16,7 +16,8 @@ namespace B4.PE3.OmedM.Views
 		public StartPage ()
 		{
 			InitializeComponent ();
-            BindingContext = new StartPageModel();
+            BindingContext = new StartPageModel(this.Navigation);
         }
-	}
+
+    }
 }

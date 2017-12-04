@@ -9,6 +9,7 @@ namespace B4.PE3.OmedM.Domain.Models
    public class ListLocation
     {
         public string NameList { get; set; }
-        public List<Location> Listlocations{ get; set; }
+        public Location Location { get; set; }
+        public List<Location> Locations { get; set; }
     }
 }

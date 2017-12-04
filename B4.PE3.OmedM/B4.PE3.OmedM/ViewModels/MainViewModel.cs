@@ -12,11 +12,24 @@ namespace B4.PE3.OmedM.ViewModels
     class MainViewModel : INotifyPropertyChanged
     {
         LocationInMemoryService locationService;
-        public MainViewModel()
+
+        //public MainViewModel(INavigation navigation)
+        //{
+        //    this.navigation = navigation;
+
+        //    locationService = new LocationInMemoryService();
+        //    Locations = new ObservableCollection<Location>(locationService.GetAll().Result);
+        //}
+        INavigation navigation;
+        public MainViewModel(Location location, INavigation navigation)
         {
+            this.navigation = navigation;
+            
+
             locationService = new LocationInMemoryService();
-            //Locations = new ObservableCollection<Location>(locationService.GetAll().Result);
+            Locations = new ObservableCollection<Location>(locationService.GetAll().Result);
         }
+
         public event PropertyChangedEventHandler PropertyChanged;
         public void RaisePropertyChanged([CallerMemberName] string propertyName = null)
         {
@@ -50,14 +63,6 @@ namespace B4.PE3.OmedM.ViewModels
                  Locations = new ObservableCollection<Location>(locationService.GetAll().Result);
              });
 
-        //INavigation navigation;
-        //public MainViewModel(Location location,INavigation navigation)
-        //{
-        //    this.navigation = navigation;
-
-        //    locationService = new LocationInMemoryService();
-        //    Locations = new ObservableCollection<Location>(locationService.GetAll().Result);
-        //}
 
     }
 }

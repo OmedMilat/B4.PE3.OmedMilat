@@ -9,10 +9,10 @@ namespace B4.PE3.OmedM.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainView : ContentPage
     {
-        public MainView()
+        public MainView(Location location)
         {
             InitializeComponent();
-            BindingContext = new MainViewModel();
+            BindingContext = new MainViewModel(location, this.Navigation);
         }
     }
 }

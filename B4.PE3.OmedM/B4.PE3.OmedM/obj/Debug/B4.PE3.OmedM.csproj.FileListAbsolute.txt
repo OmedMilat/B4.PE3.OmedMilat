@@ -25,3 +25,6 @@ C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\bin\Debug\Splat.dll
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\bin\Debug\Acr.UserDialogs.Interface.pdb
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\obj\Debug\B4.PE3.OmedM.Views.StartPage.xaml.g.cs
+C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\bin\Debug\Corcav.Behaviors.dll
+C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\bin\Debug\Corcav.Behaviors.pdb
+C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\bin\Debug\Corcav.Behaviors.xml
