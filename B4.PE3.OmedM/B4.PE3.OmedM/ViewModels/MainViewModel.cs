@@ -13,18 +13,10 @@ namespace B4.PE3.OmedM.ViewModels
     {
         LocationInMemoryService locationService;
 
-        //public MainViewModel(INavigation navigation)
-        //{
-        //    this.navigation = navigation;
-
-        //    locationService = new LocationInMemoryService();
-        //    Locations = new ObservableCollection<Location>(locationService.GetAll().Result);
-        //}
         INavigation navigation;
         public MainViewModel(Location location, INavigation navigation)
         {
-            this.navigation = navigation;
-            
+            this.navigation = navigation;           
 
             locationService = new LocationInMemoryService();
             Locations = new ObservableCollection<Location>(locationService.GetAll().Result);
@@ -44,7 +36,7 @@ namespace B4.PE3.OmedM.ViewModels
             set
             {
                 locations = value;
-                RaisePropertyChanged(nameof(Locations));
+                RaisePropertyChanged();
             }
         }
 

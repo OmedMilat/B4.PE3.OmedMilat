@@ -14,6 +14,7 @@ namespace B4.PE3.OmedM.ViewModels
     class StartPageModel : INotifyPropertyChanged
     {
         LocationInMemoryService locationService;
+        
         public StartPageModel()
         {
             locationService = new LocationInMemoryService();
@@ -26,6 +27,7 @@ namespace B4.PE3.OmedM.ViewModels
             if (PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
+
 
         ObservableCollection<ListLocation> listlocations;
         public ObservableCollection<ListLocation> Listlocations
@@ -40,18 +42,17 @@ namespace B4.PE3.OmedM.ViewModels
 
         
         public ICommand AddListGps => new Command<Location>(
-            async (Location test) =>
+            async (Location location) =>
             {
                 await locationService.AddNewLocationList();
-                await navigation.PushAsync(new MainView(test));
+                await navigation.PushAsync(new MainView(location));
             });
 
         INavigation navigation;
         public ICommand EditList => new Command<Location>(
-            async (Location test) =>
+            async (Location location) =>
             {
-                Location test5 = new Location();
-                await navigation.PushAsync(new MainView(test));
+                await navigation.PushAsync(new MainView(location));
             });
 
         public StartPageModel(INavigation navigation)

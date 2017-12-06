@@ -9,7 +9,7 @@ namespace B4.PE3.OmedM.Domain.Services
 {
     public class LocationInMemoryService
     {
-#region FirstPage
+        #region FirstPage
 
         static List<ListLocation> listLocations = new List<ListLocation>
         {
@@ -24,14 +24,13 @@ namespace B4.PE3.OmedM.Domain.Services
         public async Task AddNewLocationList()
         {
             await Task.Delay(0);
-             listLocations.Add(new ListLocation { Locations = new List<Location>{ }, NameList="test1" });
+            listLocations.Add(new ListLocation { Id = Guid.NewGuid(), Locations = new List<Location> { }, NameList = "test1" });
         }
 
         #endregion
 
 
         #region MainViewModel
-        //InMemLocations = niks waard
         static List<Location> InMemLocations = new List<Location>
         {
             new Location{Name="hohoh"}
@@ -55,22 +54,15 @@ namespace B4.PE3.OmedM.Domain.Services
             locator.DesiredAccuracy = 20;
 
             var position = await locator.GetPositionAsync(timeoutMilliseconds: 10000);
-            listLocations.Add( new ListLocation
-            {
-                Locations = new List<Location> {
-                new Location
-                {
+
+            InMemLocations.Add( new Location {
                     Latitude = position.Latitude.ToString(),
                     Longitude = position.Longitude.ToString(),
                     Name = name,
-                    GpsTime = DateTime.UtcNow
-                }
-            }
-            });
-
+                    GpsTime = DateTime.UtcNow} );
         }
-        #endregion
 
-        
+#endregion
+
     }
 }
