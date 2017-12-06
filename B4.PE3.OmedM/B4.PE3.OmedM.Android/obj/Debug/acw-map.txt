@@ -6,6 +6,10 @@ B4.PE3.OmedM.Droid.MainApplication, B4.PE3.OmedM.Android;md597379aebb14e84a754c8
 B4.PE3.OmedM.Droid.MainApplication, B4.PE3.OmedM.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md597379aebb14e84a754c86872c8dfc428.MainApplication
 B4.PE3.OmedM.Droid.MainApplication;md597379aebb14e84a754c86872c8dfc428.MainApplication
 b4.pe3.omedm.droid.MainApplication;md597379aebb14e84a754c86872c8dfc428.MainApplication
+B4.PE3.OmedM.Droid.Renderer.GenericButtonRenderer, B4.PE3.OmedM.Android;md57ed06257992e56efcc5809f5a4e51c4f.GenericButtonRenderer
+B4.PE3.OmedM.Droid.Renderer.GenericButtonRenderer, B4.PE3.OmedM.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md57ed06257992e56efcc5809f5a4e51c4f.GenericButtonRenderer
+B4.PE3.OmedM.Droid.Renderer.GenericButtonRenderer;md57ed06257992e56efcc5809f5a4e51c4f.GenericButtonRenderer
+b4.pe3.omedm.droid.renderer.GenericButtonRenderer;md57ed06257992e56efcc5809f5a4e51c4f.GenericButtonRenderer
 Acr.Support.Android.ActivityLifecycleCallbacks, Acr.Support.Android;md5cf6f91d9bcbb245b12b8f240e1ec031d.ActivityLifecycleCallbacks
 Acr.Support.Android.ActivityLifecycleCallbacks, Acr.Support.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cf6f91d9bcbb245b12b8f240e1ec031d.ActivityLifecycleCallbacks
 Acr.Support.Android.ActivityLifecycleCallbacks;md5cf6f91d9bcbb245b12b8f240e1ec031d.ActivityLifecycleCallbacks

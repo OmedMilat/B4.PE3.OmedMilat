@@ -1,10 +1,12 @@
-﻿using System.ComponentModel;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using Xamarin.Forms;
+using B4.PE3.OmedM.Domain.Services;
+using System.ComponentModel;
+using System.Collections.ObjectModel;
 using B4.PE3.OmedM.Domain.Models;
 using System.Runtime.CompilerServices;
-using System.Collections.ObjectModel;
-using B4.PE3.OmedM.Domain.Services;
+using B4.PE3.OmedM.Views;
+using System;
 using Acr.UserDialogs;
 
 namespace B4.PE3.OmedM.ViewModels
@@ -12,14 +14,11 @@ namespace B4.PE3.OmedM.ViewModels
     class MainViewModel : INotifyPropertyChanged
     {
         LocationInMemoryService locationService;
-
-        INavigation navigation;
-        public MainViewModel(Location location, INavigation navigation)
+        
+        public MainViewModel()
         {
-            this.navigation = navigation;           
-
             locationService = new LocationInMemoryService();
-            Locations = new ObservableCollection<Location>(locationService.GetAll().Result);
+            Listlocations = new ObservableCollection<ListLocation>(locationService.GetAllList().Result);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -29,32 +28,47 @@ namespace B4.PE3.OmedM.ViewModels
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        ObservableCollection<Location> locations;
-        public ObservableCollection<Location> Locations
+
+        ObservableCollection<ListLocation> listlocations;
+        public ObservableCollection<ListLocation> Listlocations
         {
-            get { return locations; }
+            get { return listlocations; }
             set
             {
-                locations = value;
+                listlocations = value;
                 RaisePropertyChanged();
             }
         }
 
-        public string Name { get; set; }
-        public ICommand GetLocation => new Command(
-             async () =>
-             {
-                 try
-                 {
-                     await locationService.AddNewLocation(Name);
-                 }
-                 catch
-                 {
-                     await UserDialogs.Instance.AlertAsync("Fout", "Gelieve uw gps aan te zetten.", "Ok");
-                 }
-                 Locations = new ObservableCollection<Location>(locationService.GetAll().Result);
-             });
+        
+        public ICommand AddListGps => new Command<Location>(
+            async (Location location) =>
+            {
+                await locationService.AddNewLocationList();
+                await navigation.PushAsync(new LocationView(location));
+            });
 
+        INavigation navigation;
+        public ICommand EditList => new Command<Location>(
+            async (Location location) =>
+            {
+                await navigation.PushAsync(new LocationView(location));
+            });
+
+        public MainViewModel(INavigation navigation)
+        {
+            this.navigation = navigation;
+
+            locationService = new LocationInMemoryService();
+            Listlocations = new ObservableCollection<ListLocation>(locationService.GetAllList().Result);
+        }
+
+        public ICommand AppearingCommand => new Command(
+         () =>
+        {
+            Listlocations = new ObservableCollection<ListLocation>(locationService.GetAllList().Result);
+        });
 
     }
 }
+

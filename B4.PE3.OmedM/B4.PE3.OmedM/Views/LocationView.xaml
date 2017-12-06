@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="B4.PE3.OmedM.Views.LocationView">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Command="{Binding GetLocation}"></Button>
+            <StackLayout>
+                <Entry Text="{Binding Name}" ></Entry>
+            </StackLayout>
+            <ListView ItemsSource="{Binding Locations}" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Margin="10,0,10,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Label Text="Name:"></Label>
+                                <Label Text="{Binding Name}" Grid.Row="1"/>
+                                <Label Text="Date:"  Grid.Column="1"></Label>
+                                <Label Text="{Binding GpsTime, StringFormat='{}{0:HH:mm}'}" Grid.Row="1" Grid.Column="1"/>
+                                <Label Text="Latitude:" Grid.Row="2"></Label>
+                                <Label Text="{Binding Latitude}" Grid.Row="3" />
+                                <Label Text="Longitude:" Grid.Row="2" Grid.Column="1"></Label>
+                                <Label Text="{Binding Longitude}" Grid.Row="3" Grid.Column="1"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

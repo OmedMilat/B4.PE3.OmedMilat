@@ -10,7 +10,7 @@ namespace B4.PE3.OmedM
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new StartPage());
+            MainPage = new NavigationPage(new MainView());
         }
 
         protected override void OnStart()

@@ -1,3 +1,4 @@
+C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM.Android\obj\Debug\B4.PE3.OmedM.Android.csprojResolveAssemblyReference.cache
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM.Android\bin\Debug\B4.PE3.OmedM.Android.dll
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM.Android\bin\Debug\B4.PE3.OmedM.Android.pdb
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM.Android\bin\Debug\B4.PE3.OmedM.Android.apk
@@ -61,7 +62,6 @@ C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM.Android\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM.Android\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM.Android\obj\Debug\B4.PE3.OmedM.Android.csprojResolveAssemblyReference.cache
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM.Android\obj\Debug\B4.PE3.OmedM.Android.csproj.CoreCompileInputs.cache
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM.Android\obj\Debug\B4.PE3.OmedM.Android.dll
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM.Android\obj\Debug\B4.PE3.OmedM.Android.pdb

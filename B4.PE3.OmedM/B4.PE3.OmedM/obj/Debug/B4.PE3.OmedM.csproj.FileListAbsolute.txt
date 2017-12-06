@@ -1,3 +1,8 @@
+C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\obj\Debug\B4.PE3.OmedM.csprojResolveAssemblyReference.cache
+C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\obj\Debug\B4.PE3.OmedM.csproj.CoreCompileInputs.cache
+C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\obj\Debug\B4.PE3.OmedM.App.xaml.g.cs
+C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\obj\Debug\B4.PE3.OmedM.Views.MainView.xaml.g.cs
+C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\obj\Debug\B4.PE3.OmedM.Views.LocationView.xaml.g.cs
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\bin\Debug\B4.PE3.OmedM.dll
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\bin\Debug\B4.PE3.OmedM.pdb
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\bin\Debug\Acr.UserDialogs.dll
@@ -21,10 +26,5 @@ C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\bin\Debug\Xamarin.Forms.Platform.pdb
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\bin\Debug\Xamarin.Forms.Xaml.xml
-C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\obj\Debug\B4.PE3.OmedM.csprojResolveAssemblyReference.cache
-C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\obj\Debug\B4.PE3.OmedM.csproj.CoreCompileInputs.cache
-C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\obj\Debug\B4.PE3.OmedM.App.xaml.g.cs
-C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\obj\Debug\B4.PE3.OmedM.Views.MainView.xaml.g.cs
-C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\obj\Debug\B4.PE3.OmedM.Views.StartPage.xaml.g.cs
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\obj\Debug\B4.PE3.OmedM.dll
 C:\Users\qais187\Documents\School\HBO\Programmeren 5\B4.PE3.OmedM\B4.PE3.OmedM\B4.PE3.OmedM\obj\Debug\B4.PE3.OmedM.pdb
