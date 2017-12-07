@@ -49,10 +49,10 @@ namespace B4.PE3.OmedM.ViewModels
             });
 
         INavigation navigation;
-        public ICommand EditList => new Command<Location>(
-            async (Location location) =>
+        public ICommand EditList => new Command<ItemTappedEventArgs>(
+            async (ItemTappedEventArgs location) =>
             {
-                await navigation.PushAsync(new LocationView(location));
+               // await navigation.PushAsync(new LocationView(location));
             });
 
         public MainViewModel(INavigation navigation)
@@ -66,6 +66,7 @@ namespace B4.PE3.OmedM.ViewModels
         public ICommand AppearingCommand => new Command(
          () =>
         {
+            locationService.Clean();
             Listlocations = new ObservableCollection<ListLocation>(locationService.GetAllList().Result);
         });
 

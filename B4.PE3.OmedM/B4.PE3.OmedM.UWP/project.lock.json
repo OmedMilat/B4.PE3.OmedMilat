@@ -22906,12 +22906,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\qais187\\Documents\\School\\HBO\\Programmeren 5\\B4.PE3.OmedM\\B4.PE3.OmedM\\B4.PE3.OmedM.UWP\\B4.PE3.OmedM.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\qais187\\Documents\\School\\Programmeren 5\\B4.PE3.OmedMilat\\B4.PE3.OmedM\\B4.PE3.OmedM.UWP\\B4.PE3.OmedM.UWP.csproj",
       "projectName": "B4.PE3.OmedM.UWP",
-      "projectPath": "C:\\Users\\qais187\\Documents\\School\\HBO\\Programmeren 5\\B4.PE3.OmedM\\B4.PE3.OmedM\\B4.PE3.OmedM.UWP\\B4.PE3.OmedM.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\qais187\\Documents\\School\\HBO\\Programmeren 5\\B4.PE3.OmedM\\B4.PE3.OmedM\\B4.PE3.OmedM.UWP\\project.json",
+      "projectPath": "C:\\Users\\qais187\\Documents\\School\\Programmeren 5\\B4.PE3.OmedMilat\\B4.PE3.OmedM\\B4.PE3.OmedM.UWP\\B4.PE3.OmedM.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\qais187\\Documents\\School\\Programmeren 5\\B4.PE3.OmedMilat\\B4.PE3.OmedM\\B4.PE3.OmedM.UWP\\project.json",
       "packagesPath": "C:\\Users\\qais187\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\qais187\\Documents\\School\\HBO\\Programmeren 5\\B4.PE3.OmedM\\B4.PE3.OmedM\\B4.PE3.OmedM.UWP\\obj\\",
+      "outputPath": "C:\\Users\\qais187\\Documents\\School\\Programmeren 5\\B4.PE3.OmedMilat\\B4.PE3.OmedM\\B4.PE3.OmedM.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\qais187\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22924,8 +22924,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Users\\qais187\\Documents\\School\\HBO\\Programmeren 5\\B4.PE3.OmedM\\B4.PE3.OmedM\\B4.PE3.OmedM\\B4.PE3.OmedM.csproj": {
-              "projectPath": "C:\\Users\\qais187\\Documents\\School\\HBO\\Programmeren 5\\B4.PE3.OmedM\\B4.PE3.OmedM\\B4.PE3.OmedM\\B4.PE3.OmedM.csproj"
+            "C:\\Users\\qais187\\Documents\\School\\Programmeren 5\\B4.PE3.OmedMilat\\B4.PE3.OmedM\\B4.PE3.OmedM\\B4.PE3.OmedM.csproj": {
+              "projectPath": "C:\\Users\\qais187\\Documents\\School\\Programmeren 5\\B4.PE3.OmedMilat\\B4.PE3.OmedM\\B4.PE3.OmedM\\B4.PE3.OmedM.csproj"
             }
           }
         }
@@ -22967,7 +22967,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 2.3.4.231 to 2.3.4.224. Reference the package directly from the project to select a different version. \r\n B4.PE3.OmedM.UWP (>= 1.0.0) -> Corcav.Behaviors (>= 2.3.7) -> Xamarin.Forms (>= 2.3.4.231) \r\n B4.PE3.OmedM.UWP (>= 1.0.0) -> Xamarin.Forms (>= 2.3.4.224)",
+      "message": "Detected package downgrade: Xamarin.Forms from 2.3.4.231 to 2.3.4.224. Reference the package directly from the project to select a different version. \r\n B4.PE3.OmedM.UWP -> Corcav.Behaviors 2.3.7 -> Xamarin.Forms (>= 2.3.4.231) \r\n B4.PE3.OmedM.UWP -> Xamarin.Forms (>= 2.3.4.224)",
       "libraryId": "Xamarin.Forms",
       "targetGraphs": [
         "UAP,Version=v10.0.10586",
