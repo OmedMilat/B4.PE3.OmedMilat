@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="B4.PE3.OmedM.Views.LocationView">
+             x:Class="B4.PE3.OmedM.Views.LocationView"
+             Title="GPS">
 
     <ContentPage.Content>
         <StackLayout>
-            <Button Command="{Binding GetLocation}"></Button>
+            <Button Text="Search for current location" Command="{Binding GetLocation}"></Button>
             <StackLayout>
-                <Entry Text="{Binding Name}" ></Entry>
+                <Label Text="Gps name:" Margin="10,0,0,0"></Label>
+                <Entry Text="{Binding Name}"></Entry>
             </StackLayout>
             <ListView ItemsSource="{Binding Locations}" HasUnevenRows="True">
                 <ListView.ItemTemplate>
@@ -26,7 +28,7 @@
                                 </Grid.RowDefinitions>
                                 <Label Text="Name:"></Label>
                                 <Label Text="{Binding Name}" Grid.Row="1"/>
-                                <Label Text="Date:"  Grid.Column="1"></Label>
+                                <Label Text="Time:"  Grid.Column="1"></Label>
                                 <Label Text="{Binding GpsTime, StringFormat='{}{0:HH:mm}'}" Grid.Row="1" Grid.Column="1"/>
                                 <Label Text="Latitude:" Grid.Row="2"></Label>
                                 <Label Text="{Binding Latitude}" Grid.Row="3" />

@@ -9,7 +9,7 @@ namespace B4.PE3.OmedM.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LocationView : ContentPage
     {
-        public LocationView(Location location)
+        public LocationView(ListLocation location)
         {
             InitializeComponent();
             BindingContext = new LocationViewModel(location, this.Navigation);

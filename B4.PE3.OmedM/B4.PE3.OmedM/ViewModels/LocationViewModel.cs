@@ -12,14 +12,16 @@ namespace B4.PE3.OmedM.ViewModels
     class LocationViewModel : INotifyPropertyChanged
     {
         LocationInMemoryService locationService;
-
+        private ListLocation testo = new ListLocation();
         INavigation navigation;
-        public LocationViewModel(Location location, INavigation navigation)
+        public LocationViewModel(ListLocation location, INavigation navigation)
         {
-            this.navigation = navigation;           
-
+            this.navigation = navigation;
+            
+            testo = location;
             locationService = new LocationInMemoryService();
-            Locations = new ObservableCollection<Location>(locationService.GetAll().Result);
+            
+            Locations = new ObservableCollection<Location>(locationService.GetAll(location).Result);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -46,13 +48,13 @@ namespace B4.PE3.OmedM.ViewModels
              {
                  try
                  {
-                     await locationService.AddNewLocation(Name);
+                      await locationService.AddNewLocation(Name, testo);
                  }
                  catch
                  {
                      await UserDialogs.Instance.AlertAsync("Fout", "Gelieve uw gps aan te zetten.", "Ok");
                  }
-                 Locations = new ObservableCollection<Location>(locationService.GetAll().Result);
+                 Locations = new ObservableCollection<Location>(locationService.GetAll(testo).Result);
              });
 
 

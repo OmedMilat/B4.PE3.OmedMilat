@@ -8,7 +8,7 @@ namespace B4.PE3.OmedM.Domain.Models
 {
    public class ListLocation
     {
-        public int? Id { get; set; }
+        public Guid Id { get; set; }
         public string NameList { get; set; }
         public List<Location> Locations { get; set; }
     }

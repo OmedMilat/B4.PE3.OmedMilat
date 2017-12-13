@@ -11,7 +11,7 @@
 namespace B4.PE3.OmedM.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\qais187\\Documents\\School\\Programmeren 5\\B4.PE3.OmedMilat\\B4.PE3.OmedM\\B4" +
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\qais187\\Documents\\School\\HBO\\Programmeren 5\\B4.PE3.OmedM\\B4.PE3.OmedM\\B4" +
         ".PE3.OmedM\\Views\\LocationView.xaml")]
     public partial class LocationView : global::Xamarin.Forms.ContentPage {
         
