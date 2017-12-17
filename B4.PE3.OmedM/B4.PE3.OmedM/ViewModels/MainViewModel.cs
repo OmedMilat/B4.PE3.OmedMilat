@@ -6,11 +6,7 @@ using System.Collections.ObjectModel;
 using B4.PE3.OmedM.Domain.Models;
 using System.Runtime.CompilerServices;
 using B4.PE3.OmedM.Views;
-using System.Xml.Serialization;
 using Acr.UserDialogs;
-using System.IO;
-using System.Xml;
-using PCLStorage;
 
 
 namespace B4.PE3.OmedM.ViewModels
@@ -48,9 +44,11 @@ namespace B4.PE3.OmedM.ViewModels
         public ICommand AddListGps => new Command<ListLocation>(
             async (ListLocation location) =>
             {
-                var prompt = new PromptConfig();
-                prompt.Message = "Name of the list:";
-                prompt.OkText = "Add";
+                var prompt = new PromptConfig
+                {
+                    Message = "Name of the list:",
+                    OkText = "Add"
+                };
                 var result = await UserDialogs.Instance.PromptAsync(prompt);
                 if (result.Ok)
                 {

@@ -6,7 +6,13 @@
              xmlns:bhv="clr-namespace:B4.PE3.OmedM.Behaviors"
              Title="Location Lists">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Command="{Binding AddListGps}"/>
+        <ToolbarItem Text="Add" Command="{Binding AddListGps}">
+            <ToolbarItem.Icon>
+            <OnPlatform x:TypeArguments="FileImageSource">
+                <On Platform="Windows">plus.png</On>
+            </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
     </ContentPage.ToolbarItems>
     
     <b:Interaction.Behaviors>

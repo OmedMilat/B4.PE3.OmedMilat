@@ -2916,6 +2916,8 @@ containing a value of this type.
         public static int toolbar=0x7f03003b;
     }
     public static final class string {
+        public static int ApplicationName=0x7f080027;
+        public static int Hello=0x7f080026;
         public static int abc_action_bar_home_description=0x7f08000f;
         public static int abc_action_bar_home_description_format=0x7f080010;
         public static int abc_action_bar_home_subtitle_description_format=0x7f080011;
@@ -2938,7 +2940,7 @@ containing a value of this type.
         public static int appbar_scrolling_view_behavior=0x7f080023;
         public static int bottom_sheet_behavior=0x7f080024;
         public static int character_counter_pattern=0x7f080025;
-        public static int library_name=0x7f080026;
+        public static int library_name=0x7f080028;
         public static int mr_button_content_description=0x7f080000;
         public static int mr_chooser_searching=0x7f080001;
         public static int mr_chooser_title=0x7f080002;
